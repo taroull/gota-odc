@@ -1,11 +1,13 @@
-# gota-odc
----
-Trabajos realizados en torno a los datos del grupo GOTA.
+gota-odc
+==========
+
+*Trabajos realizados en torno a los datos del grupo GOTA.*
+
 * NetCDF Converter
 * Notebook: Mapa GOTA
 
-## NetCDF Converter
----
+NetCDF Converter
+----------------
 Convierte un fichero científico en formato `NetCDF` a una combinación de `JSON` y `CSV`, con el objetivo de hacer los datos más ‘amigables’.
 
 Dado un fichero en formato `NetCDF`, se genera:
@@ -13,8 +15,7 @@ Dado un fichero en formato `NetCDF`, se genera:
 * Para cada una de las variables definidas, un fichero `CSV` con sus valores.
 * Un fichero `CSV` con todas las variables y todos los valores.
 
-### Ejecución:
-
+**Ejecución:**
 ```
 python netcdf_converter.py ficheroDeEntrada.nc variableDeSalida
 ```
@@ -24,8 +25,10 @@ Por ejemplo:
 python netcdf_converter.py dif_t2max_day_2090_2099_rcp85_wrf341wrf4g_ll_yseasmean.nc T2MAX
 ```
 
-## Notebook: Mapa GOTA
 ---
+
+Notebook: Mapa GOTA
+-------------------
 Ejemplo de uso de datos abiertos del portal Open Data Canarias.
 
 Para llevar a cabo este ejemplo se han hecho uso de los datos [**Proyecciones climáticas de temperatura máxima en Canarias para el período 2090-2100 (RCP4.5)**](http://www.opendatacanarias.es/datos/dataset/gota-ull-proyecciones-climaticas-de-temperatura-maxima-en-canarias-para-el-periodo-2090-2100-rcp4-5/resource/7c1bc250-73f0-400a-b5e9-ea4f93a30683) en formato `NetCDF` extraidos del portal Open Data Canarias.
